@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Clientes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registro de Cliente</h2>
+        <form id="clienteForm">
+            <input type="hidden" id="clienteIndex">
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="saldo">Saldo:</label>
+            <input type="number" id="saldo" required>
+
+            <button type="submit" id="guardarBtn">Registrar Cliente</button>
+        </form>
+
+        <h2>Clientes Registrados</h2>
+        <div id="clientesRegistrados">
+            <ul id="listaClientes"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
